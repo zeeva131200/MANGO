@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_border"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/editProfileBtn"
+        android:layout_width="160dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/ripple_effect_btn"
+        android:text="Edit Profile"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/Enable_AIBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+    android:id="@+id/Enable_AIBtn"
+    android:layout_width="260dp"
+    android:layout_height="70dp"
+    android:layout_marginBottom="284dp"
+    android:background="@drawable/ripple_effect_btn"
+    android:text="ENABLE FACIAL AUTHENTICATION"
+    android:textSize="19sp"
+    app:backgroundTint="@null"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.509"
+    app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="160dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="190dp"
+        android:background="@drawable/ripple_effect_btn"
+        android:text="LOGOUT"
+        android:textSize="19sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

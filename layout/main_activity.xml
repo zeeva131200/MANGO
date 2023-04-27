@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_border"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Mango"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mango"
+        android:textColor="@color/gold"
+        android:textSize="70sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+    <Button
+        android:id="@+id/driverBtn"
+        android:layout_width="160dp"
+        android:layout_height="61dp"
+        android:background="@drawable/ripple_effect_btn"
+        android:text="@string/driver"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/passengerBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Mango"
+        app:layout_constraintVertical_bias="0.956" />
+
+    <Button
+        android:id="@+id/passengerBtn"
+        android:layout_width="160dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/ripple_effect_btn"
+        android:text="@string/passenger"
+        android:textSize="19sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/mangoIcon"
+        android:layout_width="303dp"
+        android:layout_height="253dp"
+        app:layout_constraintBottom_toTopOf="@+id/driverBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Mango"
+        app:layout_constraintVertical_bias="0.22"
+        app:srcCompat="@mipmap/logo"
+        android:contentDescription="@string/desc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
